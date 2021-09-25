@@ -1,67 +1,148 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-    <header class="main-header">
-      <nav class="nav">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <nav class="nav">
       <ul class="nav-list">
-      <li class="nav-item">
-      <a href="#" class="nav-link nav-link-active"> Главная</a>
-      </li>
-      <li class="nav-item">
-      <a href="#" class="nav-link"> О Седоне</a>
-      </li>
-      <li class="nav-item">
-      <a href="#" class="nav-link"> Гостиницы</a>
-      </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link nav-link-active"> Главная</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link"> О Седоне</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link"> Гостиницы</a>
+        </li>
       </ul>
       <a href="#" class="nav-logo">
-      <img src="" alt="Логотип города Седоны">
+        <img src="" alt="Герб города Седоны">
       </a>
       <ul class="nav-list nav-user">
-      <li class="nav-item">
-        <!-- Добавляем классы для поиска и избранного, чтобы впоследствии задать им собственные стили - ведь они по макету отличаются от ссылок первого списка-->
-      <a href="#" class="nav-link iqon-search">
-      <span class="visually-hidden">Поиск</span>
-      </a>
-      </li>
-      <li class="nav-item">
-      <a href="#" class="nav-link iqon-fav">
-      <span class="visually-hidden">Избранное</span>
-      </a>
-      </li>
-      <li class="nav-item">
-        <!-- Добавляем общий класс для кнопок btns (чтобы хадать стиль для другой кнопки, в main; также добавляем свой класс этой кнопке, чтобы задать стили согласно макету)-->
-      <a href="#" class="nav-link btns btn-nav">
-      ХОЧУ СЮДА!
-      </a>
-      </li>
+        <li class="nav-item">
+          <!-- Добавляем классы для поиска и избранного, чтобы впоследствии задать им собственные стили - ведь они по макету отличаются от ссылок первого списка-->
+          <a href="#" class="nav-link iqon-search">
+            <span class="visually-hidden">Поиск</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link iqon-fav">
+            <span class="visually-hidden">Избранное</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <!-- Добавляем общий класс для кнопок btns, чтобы задать общий стиль для кнопок. Он пригодится для кнопки "Поиск гостиницы в Седоне", в main;
+             также добавляем свой класс кнопке "Хочу сюда!", чтобы задать стили согласно макету. Также делаем ссылку-якорь)-->
+          <a href="#search" class="nav-link btns btn-nav">
+            ХОЧУ СЮДА!
+          </a>
+        </li>
       </ul>
-      
-      </nav>
-      
-      </header>
-      <main class="main-page">
-        <h1>
-          <span class="visually-hidden">
-            Городок Седона
-          </span></h1>
-          <!-- Логотип идёт на фоновом изображении - его по идее добавим потом стилями-->
-        <img class="main-logo-welcome" src="" alt="Приветствие">
-        <section class="advantages">
-          <h2 class="visually-hidden"> Преимущества </h2>
-          <p class="paragraph-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-          <p class="paragraph-description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-          
-          
-        </section>
+    </nav>
+  </header>
+  <main class="main-page">
+    <h1>
+      <span class="visually-hidden">Городок Седона</span>
+    </h1>
+    <!-- Логотип идёт на фоновом изображении - его по идее добавим потом стилями-->
+    <img class="main-logo-welcome" src="" alt="Приветствие">
+    <section class="advantages">
+      <h2 class="visually-hidden"> Преимущества </h2>
+      <!-- класс paragraph-title пригодится для задания общего стиля таким же подзаголовкам, присутствующим на макете-->
+      <p class="paragraph-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+      <p class="paragraph-description-advantages">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      <ol class="advantages-list">
+        <li class="advantages-item">
+          <h3 class="advantages-title reason1"> Настоящий городок </h3>
+          <span class="advantages-figures">— №1 —</span>
+          <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          <img class="advantages-photo1" src="#" alt="Улицы города Седоны">
+        </li>
+        <!-- Неупорядоченный список внутри упорядоченного, alt оставил пустым, т.к. изображения декоративные-->
+        <li class="advantages-item">
+          <ul class="advantages-list" >
+            <li class="advantages-item">
+              <h3 class="advantages-title">Жильё</h3>
+              <img class="advantages-houseroompic" src="#">
+              <p class="advantages-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            </li>
+            <li class="advantages-item">
+              <h3 class="advantages-title">Еда</h3>
+              <img class="advantages-foodpic" src="#">
+              <p class="advantages-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+            <li class="advantages-item">
+              <h3 class="advantages-title">Сувениры</h3>
+              <img class="advantages-souvenirs" src="#">
+              <p class="advantages-description">Не только китайского, но и настоящего местного производства!</p>
+            </li>
+          </ul>
+        </li>
+        <li class="advantages-item">
+          <h3 class="advantages-title reason1"> Там есть мост Дьявола </h3>
+          <span class="advantages-figures">— №2 —</span>
+          <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+          <img class="advantages-photo2" src="#" alt="Мост Дьявола на фоне гор">
+        </li>
+        <li class="advantages-item">
+          <h3 class="advantages-title reason1"> Небольшая площадь </h3>
+          <span class="advantages-figures">— №3 —</span>
+          <p class="advantages-description">Все достопримечательности находятся очень близко</p>
+        </li>
+        <li class="advantages-item">
+          <h3 class="advantages-title reason1"> Красивая дорога </h3>
+          <span class="advantages-figures">— №4 —</span>
+          <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </li>
+        <li class="advantages-item">
+          <h3 class="advantages-title reason1"> Мало туристов </h3>
+          <span class="advantages-figures">— №5 —</span>
+          <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
+        </li>
+      </ol>
+    </section>
+    <section class="hotelsearch">
+      <h2>
+        <span class="visually-hidden">Поиск гостиницы</span>
+      </h2>
+      <p class="paragraph-title">Заинтересовались?</p>
+      <p class="paragraph-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <a href="#" class="btns btn-search" id="search">Поиск гостиницы в Седоне</a>
+    </section>
+    <section class="mail">
+      <h2>Подпишитесь на рассылку</h2>
+      <p class="paragraph-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <form class="mail-form" action="https://echo.htmlacademy.ru/" method="post">
+        <input type="email" name="mail-send" placeholder="Ваш e-mail">
+        <button type="submit" class="btns btn-sub">Подписаться</button>
+      </form>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <section class="footer-social">
+      <h2 class="visually-hidden">Социальные сети</h2>
+    </section>
 
-      </main>
+    <section class="telnumber">
+      <h2 class="page-footer-title">Контактный номер телефона</h2>
+    </section>
 
-    
+    <section class="footer-about">
+      <h2 class="page-footer-title">Разработчик сайта</h2>
+      <a href="https://htmlacademy.ru/">
+        <img class="about" href="#" alt="Сайт академии">
+      </a>
+    </section> 
 
-  </body>
+  </footer>
+
+
+
+</body>
+
 </html>
