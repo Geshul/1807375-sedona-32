@@ -5,8 +5,63 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+    <header class="main-header">
+      <nav class="nav">
+      <ul class="nav-list">
+      <li class="nav-item">
+      <a href="#" class="nav-link nav-link-active"> Главная</a>
+      </li>
+      <li class="nav-item">
+      <a href="#" class="nav-link"> О Седоне</a>
+      </li>
+      <li class="nav-item">
+      <a href="#" class="nav-link"> Гостиницы</a>
+      </li>
+      </ul>
+      <a href="#" class="nav-logo">
+      <img src="" alt="Логотип города Седоны">
+      </a>
+      <ul class="nav-list nav-user">
+      <li class="nav-item">
+        <!-- Добавляем классы для поиска и избранного, чтобы впоследствии задать им собственные стили - ведь они по макету отличаются от ссылок первого списка-->
+      <a href="#" class="nav-link iqon-search">
+      <span class="visually-hidden">Поиск</span>
+      </a>
+      </li>
+      <li class="nav-item">
+      <a href="#" class="nav-link iqon-fav">
+      <span class="visually-hidden">Избранное</span>
+      </a>
+      </li>
+      <li class="nav-item">
+        <!-- Добавляем общий класс для кнопок btns (чтобы хадать стиль для другой кнопки, в main; также добавляем свой класс этой кнопке, чтобы задать стили согласно макету)-->
+      <a href="#" class="nav-link btns btn-nav">
+      ХОЧУ СЮДА!
+      </a>
+      </li>
+      </ul>
+      
+      </nav>
+      
+      </header>
+      <main class="main-page">
+        <h1>
+          <span class="visually-hidden">
+            Городок Седона
+          </span></h1>
+          <!-- Логотип идёт на фоновом изображении - его по идее добавим потом стилями-->
+        <img class="main-logo-welcome" src="" alt="Приветствие">
+        <section class="advantages">
+          <h2 class="visually-hidden"> Преимущества </h2>
+          <p class="paragraph-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p class="paragraph-description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+          
+          
+        </section>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+      </main>
+
+    
 
   </body>
 </html>
