@@ -1,0 +1,51 @@
+.welcome {
+   width: 1200px;
+   height: 485px;
+   background-image: url("../img/index/welcome-background.jpg");
+   background-repeat: no-repeat;
+   /* Цвет текста на блоках с картинками по макету белый, задаю темный фон */
+   background-color: #333333;
+}
+.mail {
+   width: 1200px;
+   height: 411px;
+   background-image: url("../img/index/mail-background.jpg");
+   background-repeat: no-repeat;
+   background-color: #333333;
+}
+.background-wrapper {
+    width: 1200px;
+    height: 408px;
+    background-image: url("../img/catalog/catalog-background-panel.jpg");
+    background-repeat: no-repeat;
+    background-color: #333333;
+
+}
+.stars-4 {
+    width: 91px;
+    height: 17px;
+    background-image: url("../img/catalog/hotels/stars/stars-4.svg");
+    background-repeat: no-repeat;
+}
+.stars-3{
+    width: 68px;
+    height: 17px;
+    background-image: url("../img/catalog/hotels/stars/stars-3.svg");
+    background-repeat: no-repeat; 
+
+}
+.stars-2{
+    width: 43px;
+    height: 17px;
+    background-image: url("../img/catalog/hotels/stars/stars-2.svg");
+    background-repeat: no-repeat;
+}
+.catalog-hotels {
+    /* Отступ намеренно увеличил, чтобы на данном этапе текст не наезжал друг на друга. изначальный размер 44 */
+    padding-top: 70px;
+}
+
+
+.mail-inner {
+    background-image: none;
+}
