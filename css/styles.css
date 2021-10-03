@@ -3,7 +3,6 @@
    height: 485px;
    background-image: url("../img/index/welcome-background.jpg");
    background-repeat: no-repeat;
-   /* Цвет текста на блоках с картинками по макету белый, задаю темный фон */
    background-color: #333333;
 }
 .mail {
@@ -20,6 +19,13 @@
     background-repeat: no-repeat;
     background-color: #333333;
 
+}
+.stars-5 {
+    width: 114px;
+    height: 17px;
+    background-image: url("../img/catalog/hotels/stars/stars-5.svg");
+    background-repeat: no-repeat;
+    
 }
 .stars-4 {
     width: 91px;
@@ -40,8 +46,13 @@
     background-image: url("../img/catalog/hotels/stars/stars-2.svg");
     background-repeat: no-repeat;
 }
+.stars-1{
+    width: 18px;
+    height: 17px;
+    background-image: url("../img/catalog/hotels/stars/stars-1.svg");
+    background-repeat: no-repeat;
+}
 .catalog-hotels {
-    /* Отступ намеренно увеличил, чтобы на данном этапе текст не наезжал друг на друга. изначальный размер 44 */
     padding-top: 70px;
 }
 
