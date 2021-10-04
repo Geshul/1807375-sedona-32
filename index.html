@@ -8,6 +8,7 @@
 </head>
 
 <body>
+  <div class="content-wrapper">
   <header class="main-header">
     <nav class="nav">
       <ul class="nav-list">
@@ -45,7 +46,7 @@
     <section class="advantages">
       <h2 class="visually-hidden"> Преимущества. </h2>
       <p class="title-text">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</p>
-      <p class="description-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      <p class="description-text description-reasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       <ol class="advantages-list">
         <li class="advantages-item">
           <div class="advantages-item-wrapper">
@@ -115,11 +116,13 @@
       <h2 class="visually-hidden"> Поиск гостиницы.</h2>
       <p class="title-text">Заинтересовались?</p>
       <p class="description-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <a class="btn btn-search" id="search" href="#">Поиск гостиницы в Седоне</a>
+      <div class="search-container">
+        <a class="btn btn-search" id="search" href="#">Поиск гостиницы в Седоне</a>
+      </div>
     </section>
     <section class="mail">
-      <h2>Подпишитесь на рассылку</h2>
-      <p class="description-text">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
+      <h2 class="mail-title">Подпишитесь на рассылку</h2>
+      <p class="description-text description-mail">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
       <form class="mail-form" action="https://echo.htmlacademy.ru/" method="post">
         <label class="visually hidden" for="input-email">Поле ввода email.</label>
         <input type="email" name="email" placeholder="Ваш e-mail" id="input-email">
@@ -159,6 +162,7 @@
       </a>
     </section>
   </footer>
+</div>
 </body>
 
 </html>

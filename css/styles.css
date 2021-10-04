@@ -1,24 +1,254 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+
+    src:url("../fonts/ptsans-400.woff2");
+}
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+
+    src:url("../fonts/ptsans-700.woff2");
+}
+
+body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    background-color: #F2F2F2;
+    color: #333333;
+    margin:0;
+}
+.content-wrapper {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #ffffff;   
+}
+.nav-link {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-decoration: none;
+    text-align: left;
+    color:#000;
+}
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+}
+.nav-user a {
+    text-decoration: none;
+}
+.btn {
+    color: #ffffff;
+    background-color: #756257;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.btn-nav {
+    font-size: 16px;
+    line-height: 21px;
+}
+.btn-submit {
+    background-color: #83B3D3;
+    font-size: 20px;
+    line-height: 26px;
+}
+.btn-search {
+    font-size: 20px;
+    line-height: 36px;
+}
+.main-page {
+    color:#333333;
+}
+.advantages-item {
+    text-align: center;
+    list-style-type: none;
+}
+.title-text {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    color:#000;
+}
+.mail-title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+}
+
 .welcome {
-   width: 1200px;
+   width: 100%;
    height: 485px;
    background-image: url("../img/index/welcome-background.jpg");
    background-repeat: no-repeat;
    background-color: #333333;
+   margin: 0 auto;
+   background-size: 100% 100%;
+   text-align: center;
+}
+.welcome-image {
+    padding-top: 51px;
+    padding-bottom: 82px;
+}
+.description-text {
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+}
+.description-reasons {
+    line-height: 36px;
+}
+.description-mail {
+    color: #ffffff;
+}
+.search-container {
+    text-align: center;
+}
+.advantages-title {
+    line-height: 28px;
+    font-size: 24px;
+    text-transform: uppercase;
+
+}
+.advantages-content-black .advantages-title {
+    color:#000;
+}
+.advantages-content-white {
+    color: #ffffff;
+    background-color:#83B3D3;
+}
+.advantages-content-black {
+    color:#333333;
+    background-color: rgba(131, 179, 211, 0.12);
+}
+.advantages-item:nth-child(2) .advantages-content-black{
+    background-color: #ffffff;
+} 
+.advantages-item:nth-child(4) .advantages-content-black{
+    background-color: rgba(131, 179, 211, 0.2);
 }
 .mail {
-   width: 1200px;
-   height: 411px;
-   background-image: url("../img/index/mail-background.jpg");
-   background-repeat: no-repeat;
-   background-color: #333333;
+    width: 1200px;
+    height: 411px;
+    background-image: url("../img/index/mail-background.jpg");
+    background-repeat: no-repeat;
+    background-color: #333333;
+    text-align:center;
+ }
+
+.main-footer {
+    background-color: #ffffff;
+
+
+}
+.social-list {
+    list-style-type: none;
+
+}
+.social-button {
+    text-decoration: none;
+    color:#333333;
+}
+.phone {
+    color:#000;
+    text-decoration:none;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+
+.inner-content {
+    height:100%;
+ 
+}
+.main-inner {
+    font-size: 18px;
+    line-height: 23px;
+    background-color:#ffffff;
+}
+.catalog-title{
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 78px;
+}
+.breadcrumbs {
+    list-style-type: none;
+}
+.breadcrumbs-link {
+    text-decoration: none;
 }
 .background-wrapper {
-    width: 1200px;
-    height: 408px;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
     background-image: url("../img/catalog/catalog-background-panel.jpg");
     background-repeat: no-repeat;
     background-color: #333333;
+    color:#ffffff;
+}
 
+.catalog-filter-list {
+    list-style-type: none;
+}
+.catalog-filter-title {
+    font-size: 20px;
+    line-height: 26px;
+}
+.btn-approve {
+    font-size: 16x;
+    line-height: 21px;
+    background-color:#83B3D3;
+}
+.btn-reset {
+    font-size: 18x;
+    line-height: 23px;
+    background-color: unset;
+    text-transform:capitalize;
+    font-weight: normal;
+}
+.sorting-title {
+    color:#000;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 39px;
+    text-transform: uppercase;
+}
+.select-control {
+    color:#333333;
+    font-size: 18px;
+    line-height: 23px;
+    
+}
+.hotel-list {
+    list-style-type: none;
+}
+.hotel-card-link {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    color: #000000;
+}
+.hotel-card-rating span {
+    background-color:#F2F2F2;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
 }
 .stars-5 {
     width: 114px;
@@ -52,11 +282,57 @@
     background-image: url("../img/catalog/hotels/stars/stars-1.svg");
     background-repeat: no-repeat;
 }
-.catalog-hotels {
-    padding-top: 70px;
+.card-inner-wrapper span {
+    font-size: 18px;
+    line-height: 23px;
+    color: #333333;
+}
+.hotel-card-btn {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color:#FFFFFF;
+}
+.btn-about {
+    background-color:#756257;
+}
+.btn-fav {
+    background-color: #83B3D3;
+}
+.btn-fav-in {
+    background-color: #7DB54F;
+}
+.btn-load {
+    background-color:#83B3D3;
+    font-size: 20px;
+    line-height: 26px;
+
+}
+.pagination {
+    list-style-type: none;
+
 }
 
+.pagination-link {
+    font-weight: bold;
+    color: #ffffff;
+    background-color:#83B3D3;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 26px;
+}
+.pagination-current {
+    color: #000000;
+    background-color: #F2F2F2;
+}
 
 .mail-inner {
     background-image: none;
+    background-color: #ffffff;
+    height: 224px;
+
 }
