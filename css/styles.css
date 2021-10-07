@@ -14,20 +14,38 @@
     src: url("../fonts/ptsans-700.woff2") format("woff2");
 }
 
+html {
+    height: 100%;
+}
+
 body {
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
     background-color: #F2F2F2;
     color: #333333;
-    margin: 0;
+    margin: 0 auto;
+    width: 1280px;
+    height: 100%;
 }
 
 .content-wrapper {
     width: 1200px;
-    height: 100%;
     margin: 0 auto;
-    background-color: #ffffff;   
+    background-color: #ffffff; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.main-wrapper {
+    flex-grow: 1;
+}
+
+.nav {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .nav-link {
@@ -42,6 +60,20 @@ body {
 .nav-list {
     list-style-type: none;
     margin: 0;
+    padding: 0;
+    width: 412px;
+    padding-left: 71px;
+}
+
+.nav-logo {
+    width: 140px;
+    padding-left: 48px;
+}
+
+.nav-user {
+    width: 270px;
+    margin-left: auto;
+    padding-right: 54px;
 }
 
 .nav-user a {
@@ -107,7 +139,7 @@ body {
 }
 
 .welcome {
-   width: 100%;
+   width: 1200px;
    height: 485px;
    background-image: url("../img/index/welcome-background.jpg");
    background-repeat: no-repeat;
@@ -138,10 +170,33 @@ body {
     width: 480px;
 }
 
+.advantages-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.advantages-inner-list{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.advantages-photo {
+    width: 800px;
+}
+
+.advantages-item-wrapper {
+    display: flex;
+}
+
 .advantages-title {
     line-height: 28px;
     font-size: 24px;
     text-transform: uppercase;
+    margin: 0;
 }
 
 .advantages-content-black .advantages-title {
@@ -151,11 +206,15 @@ body {
 .advantages-content-white {
     color: #ffffff;
     background-color: #83B3D3;
+    width: 400px;
+
 }
 
 .advantages-content-black {
     color:#333333;
     background-color: rgba(131, 179, 211, 0.12);
+    width: 400px;
+    height: 384px;
 }
 
 .advantages-item-food .advantages-content-black{
@@ -177,12 +236,20 @@ body {
 
 .main-footer {
     background-color: #ffffff;
+}
 
+.main-footer-container {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
 
 }
 
+
 .social-list {
     list-style-type: none;
+    margin: 0;
 
 }
 
