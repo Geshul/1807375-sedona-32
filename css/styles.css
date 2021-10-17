@@ -81,7 +81,7 @@ body {
     flex-wrap: wrap;
 }
 
-.nav-link:not(last-child) {
+.nav-item:not(:last-child) {
     margin-right: 33px;
 }
 
@@ -108,8 +108,8 @@ body {
     display: block;
     width: 18px;
     height: 18px;
-    padding-top: 24px;
-    padding-bottom: 23px;
+    margin-top: 24px;
+    margin-bottom: 23px;
     margin-right: 21px;
 }
 
@@ -117,8 +117,8 @@ body {
     display: block;
     width: 31px;
     height: 27px;
-    padding-top: 14px;
-    padding-bottom: 24px;
+    margin-top: 14px;
+    margin-bottom: 24px;
     margin-right: 20px;
 } 
 
@@ -375,14 +375,28 @@ body {
     background-color: #ffffff;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
-.social-item {
+.twitter {
+    width: 18px;
+    height: 15px;
+    margin-bottom: 5px;
+}
+
+.facebook {
     width: 10px;
-    height: 10px;
+    height: 18px;
+    margin-bottom: 5px;
 }
 
-.social-item:not(last-child) {
+.youtube {
+    width: 20px;
+    height: 16px;
+    margin-bottom: 5px;
+}
+
+.social-item:not(:last-child) {
      margin-right: 30px;
 }
 
@@ -404,7 +418,9 @@ body {
     text-decoration: none;
     font-size: 40px;
     line-height: 40px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-inner {
@@ -769,10 +785,15 @@ body {
 .contacts {
     padding-top: 40px;
     padding-bottom: 30px;
+    width: 335px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
 
 .footer-social {
     padding-top: 50px;
-    padding-bottom: 55px;
-
+    padding-bottom: 50px;
+    width: 157px;
 }
