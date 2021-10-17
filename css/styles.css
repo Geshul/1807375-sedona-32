@@ -411,6 +411,7 @@ body {
 .social-button {
     text-decoration: none;
     color: #333333;
+    display: block;
 }
 
 .phone {
@@ -458,7 +459,9 @@ body {
 .index-link {
     height: 12px;
     width: 12px;
+    margin: auto 0;
     margin-right: 26px;
+    display: block;
 }
 
 .background-wrapper {
