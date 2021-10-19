@@ -223,7 +223,7 @@ body {
 
 .description-reasons {
     line-height: 36px;
-    margin-top: 73px;
+    margin-top: 23px;
     margin-bottom: 79px;
 }
 
@@ -234,10 +234,9 @@ body {
 }
 
 .mail-form {
-    align-items: flex-start;
-    display: flex;
+    display: grid;
+    grid-template-columns: 600px 200px;
     justify-content: center;
-    flex-grow: 1;
 }
 
 .inner-mail-black {
@@ -381,31 +380,26 @@ body {
 .twitter {
     width: 18px;
     height: 15px;
-    margin-bottom: 5px;
 }
 
 .facebook {
     width: 10px;
     height: 18px;
-    margin-bottom: 5px;
 }
 
 .youtube {
     width: 20px;
     height: 16px;
-    margin-bottom: 5px;
-}
-
-.social-item:not(:last-child) {
-     margin-right: 30px;
 }
 
 .social-list {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 20px 20px 20px 20px;
+    column-gap: 30px;
+    row-gap: 5px;
 }
 
 .social-button {
@@ -440,7 +434,7 @@ body {
     font-weight: bold;
     font-size: 60px;
     line-height: 78px;
-    margin: 35px auto 0 0;
+    margin: 30px auto 0 0;
 }
 
 .breadcrumbs {
@@ -527,6 +521,16 @@ body {
     margin-bottom: 34px;
 }
 
+.cost-wrapper {
+    display: grid;
+}
+
+.toggle-min, .toggle-max {
+    width: 20px;
+    height: 20px;
+    grid-row: 3 / 4;
+}
+
 .button-wrapper {
     display: flex;
     flex-direction: column;
@@ -569,6 +573,17 @@ body {
 
 .select-control-sorting {
     width: 287px;
+}
+
+.view {
+    display: grid;
+    grid-template-columns: 48px 48px 48px;
+    column-gap: 8px;
+}
+
+.view .btn {
+    background-color: #ffffff;
+    height: 48px;
 }
 
 .hotel-pic {
@@ -711,15 +726,6 @@ body {
     height: 55px;   
 }
 
-.pagination-item {
-    width: 55px;
-    padding-left: 8px;
-}
-
-.pagination-current {
-    padding-left: 0;
-}
-
 .pagination-select {
     display: flex;
     align-items: center;
@@ -742,8 +748,9 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(10, 55px);
+    gap: 8px;
 }
 
 .pagination-link {
@@ -802,7 +809,7 @@ body {
 }
 
 .footer-social {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    width: 157px;
+    padding-top: 49px;
+    padding-bottom: 53px;
+    width: 170px;
 }
