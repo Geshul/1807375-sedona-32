@@ -117,13 +117,15 @@
                 </fieldset>
                 <fieldset class="catalog-filter-group cost">
                   <legend class="catalog-filter-title">Стоимость,₽:</legend>
-                  <div class="cost-wrapper">
+                  <div class="range-toggle-wrapper">
                     <button class="range-toggle toggle-min" type="button">
                       <span class="visually-hidden">Изменить минимальную цену.</span>
                     </button>
                     <button class="range-toggle toggle-max" type="button">
                       <span class="visually-hidden">Изменить максимальную цену.</span>
                     </button>
+                  </div>
+                  <div class="filter-input-wrapper">
                     <label class="catalog-filter-label">
                       <input class="catalog-filter-input" type="number" name="min-price"> от
                     </label>
@@ -136,7 +138,6 @@
                   <button class="btn btn-approve" type="submit">Применить</button>
                   <button class="btn btn-reset" type="reset">Сбросить</button>
                 </div>
-              </div>
             </form>
           </section>
         </div>
@@ -307,7 +308,7 @@
             </li>
             <li class="social-item">
               <a class="social-button youtube" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden youtube">Ютуб.</span>
+                <span class="visually-hidden">Ютуб.</span>
               </a>
             </li>
           </ul>

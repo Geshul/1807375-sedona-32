@@ -397,9 +397,8 @@ body {
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: 20px 20px 20px 20px;
-    column-gap: 30px;
-    row-gap: 5px;
+    grid-template-columns: 20px 20px 20px;
+    gap: 30px;
 }
 
 .social-button {
@@ -517,18 +516,39 @@ body {
 }
 
 .cost .catalog-filter-title{
-    margin: 0 auto;
     margin-bottom: 34px;
 }
 
-.cost-wrapper {
-    display: grid;
+.catalog-filter-input {
+    width: 144px;
 }
 
-.toggle-min, .toggle-max {
+.cost {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-right: -90px;
+}
+
+.filter-input-wrapper {
+    display: grid;
+    grid-template-columns: 144px 144px;
+    margin-bottom: 20px;
+}
+
+.range-toggle-wrapper {
+    display: grid;
+    grid-template-columns: 144px 144px;
+    order: 1;
+}
+
+.range-toggle {
     width: 20px;
     height: 20px;
-    grid-row: 3 / 4;
+}
+
+.toggle-max {
+    margin-left: 73px;
 }
 
 .button-wrapper {
@@ -749,7 +769,7 @@ body {
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(10, 55px);
+    grid-template-columns: repeat(6, 55px);
     gap: 8px;
 }
 
