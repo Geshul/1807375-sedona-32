@@ -69,47 +69,37 @@ body {
     color: #000;
     display: block;
     box-sizing: border-box;
-    border: 3px solid transparent;
+    border-radius: 10px;
     position: relative;
     display: flex;
     padding: 6px 12px 6px 12px;
 }
 
-.nav-link:hover:not(.nav-link-active) {
+.nav-link:not(.nav-link-current):hover {
     color: #756257;
 }
 
 .nav-link:focus {
-    border: 3px solid #83B3D3;
-    outline: none;
-    box-sizing: border-box;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 10px;
+    outline: 3px solid #83B3D3;
     color: #756257;
 }
 
-.nav-link:active:not(.nav-link-active) {
+.nav-link:not(.nav-link-current):active {
     opacity: 0.3;
-    border: 3px solid transparent;
 }
 
-.nav-link-active {
+.nav-link-current {
     padding-left: 0;
 }
 
-.nav-link-active::before {
+.nav-link-current::before {
     position: absolute;
     right: 10px;
-    bottom: -14px;
+    bottom: -15px;
     left: 0;
     border: 1px solid #756257;
     content: "";
-    height: 0px;
   }
-
-.navigation-icon {
-    fill: black;
-}
 
 .search-link:hover .navigation-icon,
 .fav-link:hover .navigation-icon {
@@ -124,16 +114,12 @@ body {
 
 .search-link:focus,
 .fav-link:focus {
-    border: 3px solid #83B3D3;
-    box-sizing: border-box;
-    border-radius: 10px;
-    outline: none;
+    outline: 3px solid #83B3D3;
 }
 
 .search-link:active,
 .fav-link:active {
     opacity: 0.3;
-    border: 3px solid transparent;
 }
 
 .nav-list {
@@ -143,12 +129,12 @@ body {
     width: 412px;
     display: flex;
     flex-wrap: wrap;
-    gap: 6px;
+    gap: 9px;
 }
 
 .nav-item {
-    padding-bottom: 11px;
-    padding-top: 10px;
+    padding-bottom: 14px;
+    padding-top: 13px;
 }
 
 .nav-logo {
@@ -172,21 +158,22 @@ body {
     display: block;
     width: 18px;
     height: 18px;
-    margin-top: 14px;
-    margin-right: 1px;
+    margin-top: 17px;
+    margin-right: 7px;
     position: relative;
     box-sizing: border-box;
-    border: 3px solid transparent;
+    border-radius: 10px;
     padding: 16px;
 }
 
-.search-link .navigation-icon {
+.navigation-icon {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     margin: auto;
+    fill: black;
 }
 
 .fav-link {
@@ -194,23 +181,13 @@ body {
     align-items: end;
     width: 31px;
     height: 27px;
-    margin-top: 14px;
-    margin-right: 23px;
+    margin-top: 17px;
+    margin-right: 26px;
     position: relative;
     box-sizing: border-box;
-    border: 3px solid transparent;
+    border-radius: 10px;
     padding: 16px;
 }
-
-.fav-link .navigation-icon {
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    top: 0;
-    margin: auto;
-}
-
 
 .fav-notification {
     border-radius: 50%;
@@ -241,8 +218,9 @@ body {
     text-transform: uppercase;
     font-weight: 700;
     border-radius: 4px;
-    border: 3px solid transparent;
     font-family: "PT Sans", sans-serif;
+    outline-offset: 0;
+    border: 0;
 }
 
 .btn:hover {
@@ -251,15 +229,12 @@ body {
 
 .btn:focus {
     background: #615048; 
-    border: 3px solid #83B3D3;
-    border-radius: 4px;
-    outline: none;
+    outline: 3px solid #83B3D3;
 }
 
 .btn:active {
     background: #615048; 
     opacity: 0.3;
-    border: 3px solid transparent;
 }
 
 .btn-submit:hover {
@@ -268,13 +243,11 @@ body {
 
 .btn-submit:focus {
     background: #68A2CA;
-    border: 3px solid #756257;
-    border-radius: 0px 10px 10px 0px;
+    outline-color: #756257;
 }
 
 .btn-submit:active {
     background: #68A2CA;
-    border-radius: 0px 10px 10px 0px;
 }
 
 .btn-nav {
@@ -452,7 +425,6 @@ body {
     margin: 0 auto;
 }
 
-
 .advantages-inner-list .advantages-title {
     margin: 0 auto;
     margin-bottom: 20px;
@@ -525,29 +497,15 @@ body {
     position: relative;
 }
 
-.twitter {
-    width: 18px;
-    height: 15px;
-}
-
-.facebook {
-    width: 10px;
-    height: 18px;
-}
-
-.youtube {
-    width: 20px;
-    height: 16px;
-}
-
 .social-list {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: 18px 10px 20px;
-    gap: 30px;
+    grid-template-columns: min-content min-content min-content;
+    gap: 15px;
     position: relative;
+    margin-left: -15px;
 }
 
 .social-button {
@@ -556,56 +514,37 @@ body {
     display: block;
     box-sizing: border-box;
     padding: 17px;
-    border: 3px solid transparent;
+    border-radius: 10px;
 }
 
 .social-item {
     position: relative;
-    right: 11px;
 }
-
-.social-item:nth-child(2) {
-    right: 15px;
-}
-
-.social-item:nth-child(3) {
-    right: 10px;
-}
-
 
 .footer-icon {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
-    left: 11px;
+    left: 0;
     margin: auto;
     fill: #83B3D3;
 }
 
-.facebook .footer-icon {
-    left: 15px;
+.social-button:hover .footer-icon {
+    fill: #68A2CA;
 }
 
-.youtube .footer-icon {
-    left: 10px;
-}
-
-.social-button:hover .footer-icon,
 .social-button:focus .footer-icon {
     fill: #68A2CA;
 }
 
 .social-button:focus {
-    border: 3px solid #83B3D3;
-    box-sizing: border-box;
-    border-radius: 10px;
-    outline: none;
+    outline: 3px solid #83B3D3;
 }
 
 .social-button:active {
     opacity: 0.3;
-    border: 3px solid transparent;
 }
 
 .phone {
@@ -616,56 +555,52 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 3px solid transparent;
+    border-radius: 10px;
     padding: 10px;
 }
 
-.phone:hover,
-.phone:focus,
-.phone:active {
+.phone:hover {
     color: #756257;
 }
 
 .phone:focus {
-    border: 3px solid #83B3D3;
-    box-sizing: border-box;
-    border-radius: 10px;
-    outline: none;
+    outline: 3px solid #83B3D3;
+    color: #756257;
 }
 
 .phone:active {
     opacity: 0.3;
-    border: 3px solid transparent;
+    color: #756257;
 }
 
 .academy-logo {
-    border: 3px solid transparent;
     padding: 10px;
     display: flex;
     margin-right: -13px;
-
+    border-radius: 10px;
 }
 
 .logo-icon {
     fill: black;
 }
 
-.academy-logo:hover .logo-icon,
-.academy-logo:focus .logo-icon,
-.academy-logo:active .logo-icon {
+.academy-logo:hover .logo-icon
+ {
+    fill: #756257;
+}
+
+.academy-logo:focus .logo-icon
+ {
     fill: #756257;
 }
 
 .academy-logo:focus {
-    border: 3px solid #83B3D3;
-    box-sizing: border-box;
-    border-radius: 10px;
-    outline: none;
+    outline: 3px solid #83B3D3;
+    fill: #756257;
 }
 
 .academy-logo:active {
     opacity: 0.3;
-    border: 3px solid transparent;
 }
 
 .main-inner {
@@ -1077,8 +1012,8 @@ body {
 }
 
 .footer-social {
-    margin-top: 38px;
-    margin-bottom: 42px;
+    margin-top: 41px;
+    margin-bottom: 45px;
     width: 170px;
 }
 
