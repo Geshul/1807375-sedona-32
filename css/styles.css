@@ -631,16 +631,54 @@ body {
     display: flex;
 }
 
-.breadcrumbs-link {
-    text-decoration: none;
+.breadcrumbs-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.breadcrumbs-item {
+    display: flex;
 }
 
 .index-link {
     height: 12px;
     width: 12px;
     margin: auto 0;
-    margin-right: 26px;
+    margin-right: 17px;
     display: block;
+    box-sizing: border-box;
+    border-radius: 4px;
+    position: relative;
+    padding: 9px 14px 12px 9px;
+    margin-left: -3px;
+  
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+    content: "";
+    background-image: url("../img/catalog/breadcrumbs/breadcrumbs-arrow.svg");
+    width: 5px;
+    height: 8px;
+    position: absolute;
+    transform: translate(25px, 8px);
+    opacity: 0.3;
+}
+
+.breadcrumbs-link:hover .breadcrumbs-icon {
+    opacity: 0.6;
+}
+
+.breadcrumbs-link:focus {
+    outline: 3px solid #83B3D3;
+
+}
+
+.breadcrumbs-link:active {
+    opacity: 0.6;
 }
 
 .background-wrapper {
@@ -731,6 +769,22 @@ body {
 .range-toggle {
     width: 20px;
     height: 20px;
+    border-radius: 5px;
+    border: 0;
+}
+
+.range-toggle:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:focus {
+    outline: 3px solid #83B3D3;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25)
+}
+
+.range-toggle:active {
+    outline-width: 2px;
+    box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
 }
 
 .toggle-max {
@@ -751,14 +805,46 @@ body {
     background-color: #83B3D3;
     height: 48px;
     margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.btn-approve:hover {
+    background: #68A2CA;
+}
+
+.btn-approve:focus {
+    background: #68A2CA;
+    outline-color: #FFFFFF;
+}
+
+.btn-approve:active {
+    opacity: 0.3;
 }
 
 .btn-reset {
-    font-size: 18x;
+    font-size: 18px;
     line-height: 23px;
     background-color: unset;
     text-transform: capitalize;
     font-weight: normal;
+    border-radius: 4px;
+    width: min-content;
+    margin: 0 auto;
+    padding-bottom: 7px;
+}
+
+.btn-reset:hover {
+    opacity: 0.6;
+    background-color: transparent;
+}
+
+.btn-reset:focus {
+    outline: 3px solid #83B3D3;
+    background-color: transparent;
+}
+
+.btn-reset:active {
+    opacity: 0.3;
 }
 
 .sorting-title {
@@ -779,6 +865,8 @@ body {
 
 .select-control-sorting {
     width: 287px;
+    margin-left: auto;
+    margin-right: 81px;
 }
 
 .view {
@@ -790,10 +878,53 @@ body {
 .view .btn {
     background-color: #ffffff;
     height: 48px;
+    position: relative;
+    border: 2px solid #E6E6E6;
+}
+
+.view .btn-selected {
+    border-color: black;
+}
+
+.view .btn:hover {
+    border-color: #83B3D3;
+}
+
+.view .btn:focus {
+    border-color: #83B3D3;
+}
+
+.view .btn:active {
+    border-color: black;
+    opacity: initial;
+}
+
+.view-icon {
+    fill: black;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 
 .hotel-pic {
     display: flex;
+    height: min-content;
+    outline-offset: 0;
+}
+
+.hotel-pic:hover {
+    opacity: 0.6;
+}
+
+.hotel-pic:focus {
+    outline: 3px solid #83B3D3;
+}
+
+.hotel-pic:active {
+    opacity: 0.3;
 }
 
 .hotel-list {
@@ -805,6 +936,33 @@ body {
 .hotel-card {
     display: flex;
     margin-bottom: 58px;
+    position: relative;
+}
+
+.hotel-card::before {
+    content: "";
+    border: 0.5px solid #E6E6E6;
+    position: absolute;
+    top: -28px;
+    width: 100%;
+}
+
+.btn-load::before {
+    content: "";
+    border: 0.5px solid #E6E6E6;
+    position: absolute;
+    top: -31px;
+    width: 100%;
+    left: 0;
+}
+
+.pagination::before {
+    content: "";
+    border: 0.5px solid #E6E6E6;
+    position: absolute;
+    top: -30px;
+    width: 100%;
+    left: 0;
 }
 
 .card-inner-wrapper {
@@ -835,6 +993,23 @@ body {
     font-size: 24px;
     line-height: 31px;
     color: #000000;
+    border-radius: 10px;
+    padding: 7px 13px 7px 12px;
+    margin-left: -12px;
+}
+
+.hotel-card-link:hover {
+    color: #756257;
+}
+
+.hotel-card-link:focus {
+    outline: 3px solid #83B3D3;
+    color: #756257;
+}
+
+.hotel-card-link:active {
+    color: #756257;
+    opacity: 0.3;
 }
 
 .hotel-card-rating span {
@@ -852,7 +1027,7 @@ body {
 .card-columns-wrapper {
     display: grid;
     grid-template-columns: 151px 160px;
-    row-gap: 31px;
+    row-gap: 29px;
     column-gap: 8px;
 }
 
@@ -908,7 +1083,53 @@ body {
     height: 37px;
     align-items: center;
     justify-content: center;
+    border-radius: 4px;
+    outline-offset: 0;
 }
+
+.btn-about:hover {
+    background-color: #615048;
+}
+
+.hotel-card-btn:focus {
+    outline: 3px solid #83B3D3;
+}
+
+.btn-about:focus {
+    background-color: #615048;
+}
+
+.hotel-card-btn:active {
+    opacity: 0.3;
+}
+
+.btn-fav:hover {
+    outline: 1px solid #756257;
+    background-color: #68A2CA;
+}
+
+.btn-fav:focus {
+    outline-color: #756257;
+    background-color: #68A2CA;
+}
+
+.btn-fav:active {
+    background-color: #68A2CA; 
+}
+
+.btn-fav-in:hover {
+    background-color: #6C9E42;
+}
+
+.btn-fav-in:focus {
+    outline-color: #756257;
+    background-color: #6C9E42;
+}
+
+.btn-fav-in:active {
+    background-color: #6C9E42;
+}
+
 
 .btn-about {
     background-color: #756257;
@@ -932,6 +1153,20 @@ body {
     height: 55px;   
 }
 
+.btn-load:hover {
+    background-color: #68A2CA;
+}
+
+.btn-load:focus {
+    outline-color: #756257;
+    background-color: #68A2CA;
+}
+
+.btn-load:active {
+    opacity: 0.3;
+    background-color: #68A2CA;
+}
+
 .pagination-select {
     display: flex;
     align-items: center;
@@ -944,6 +1179,7 @@ body {
 .pagination-wrapper {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .select-control-pagination {
@@ -972,10 +1208,27 @@ body {
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    border-radius: 4px;
+    outline-offset: 0;
+}
+
+.pagination-link:not(.pagination-current):hover {
+    background: #68A2CA;
+}
+
+.pagination-link:not(.pagination-current):focus {
+    background: #68A2CA;
+    outline: 3px solid #756257;
+}
+
+.pagination-link:not(.pagination-current):active {
+    background: #68A2CA;
+    opacity: 0.3;
 }
 
 .pagination-load {
     margin-bottom: 61px;
+    position: relative;
 }
 
 .select-wrapper {
@@ -997,6 +1250,10 @@ body {
     margin: 0 auto;
     margin-bottom: 138px;
     display: block;
+}
+
+.mail-inner input {
+    background-color: #F2F2F2;
 }
 
 .footer-about {
