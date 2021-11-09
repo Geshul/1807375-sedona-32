@@ -87,15 +87,15 @@ body {
     opacity: 0.3;
 }
 
-.nav-link:first-child {
-    padding-left: 0;
+.nav-list:first-child {
+    margin-left: -13px;;
 }
 
 .nav-link-current::before {
     position: absolute;
     right: 10px;
     bottom: -15px;
-    left: 0;
+    left: 12px;
     border: 1px solid #756257;
     content: "";
   }
@@ -848,6 +848,8 @@ body {
     border: 2px solid #FFFFFF;
     box-sizing: border-box;
     color: inherit;
+    padding-right: 35px;
+    -moz-appearance: textfield;
 }
 
 .catalog-filter-input::placeholder {
@@ -861,11 +863,10 @@ body {
     width: 144px;
 }
 
-.min-label span {
+.catalog-filter-label span {
     position: absolute;
-    right: 0;
+    right: 14px;
     bottom: 12px;
-    left: 112px;
     opacity: 0.3;
     z-index: 2;
 }
@@ -881,12 +882,7 @@ body {
 }
 
 .max-label span {
-    position: absolute;
-    right: 0;
-    bottom: 12px;
-    left: 107px;
-    opacity: 0.3;
-    z-index: 2;
+    right: 17px;
 }
 
 .catalog-filter-input::-webkit-outer-spin-button,
@@ -1482,7 +1478,6 @@ body {
 }
 
 .popup {
-    font-family: "PT Sans", sans-serif;
     position: absolute;
     top: 62px;
     right: -1px;
@@ -1493,7 +1488,6 @@ body {
     background-color: white;
     box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
     color: black;
-    font-family: "PT Sans", sans-serif;
     border: 1px solid #E6E6E6;
     border-bottom-style: none;
     display: none;
@@ -1503,7 +1497,7 @@ body {
     height: 100%;
 }
 
-.delete-link {
+.delete-btn {
     height: 16px;
     width: 16px;
     border-radius: 10px;
@@ -1512,6 +1506,8 @@ body {
     margin-left: auto;
     padding: 15px;
     margin-top: 7px;
+    border: none;
+    background-color: transparent;
 }
 
 .popup-icon {
@@ -1525,19 +1521,19 @@ body {
     opacity: 0.2;
 }
 
-.delete-link:hover .popup-icon {
+.delete-btn:hover .popup-icon {
     opacity: 1;
 }
 
-.delete-link:focus .popup-icon {
+.delete-btn:focus .popup-icon {
     opacity: 1;
 }
 
-.delete-link:focus {
+.delete-btn:focus {
     outline: 3px solid #83B3D3;
 }
 
-.delete-link:active .popup-icon {
+.delete-btn:active .popup-icon {
     opacity: 0.1;
 }
 
@@ -1560,7 +1556,7 @@ body {
     margin: -7px;
 }
 
-.popup-card {
+.popup-card-list {
     list-style-type:none;
     padding: 0;
     margin: 0;
@@ -1575,6 +1571,7 @@ body {
     padding-bottom: 0;
     display: flex;
     flex-grow: 1;
+    font-family: "PT Sans", sans-serif;
 }
 
 .popup-card-title {
@@ -1632,6 +1629,7 @@ body {
     font-size: 16px;
     line-height: 21px;
     margin-top: 26px;
+    font-family: "PT Sans", sans-serif;
 }
 
 .modal-container {
@@ -1643,6 +1641,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: 1;
+    display: none;
 }
 
 .modal {
@@ -1680,6 +1679,9 @@ body {
     border-radius: 50%;
     border: none;
     cursor: pointer;
+    background-image: url(../img/modal/close-button.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .modal-close-button:hover {
@@ -1696,36 +1698,8 @@ body {
     opacity: 0.3;
 }
 
-.modal-close-button::before {
-    content: "";
-    height: 2px;
-    width: 17px;
-    transform: rotate(45deg);
-    background-color: black;
-    position: absolute;
-    margin: auto;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-}
-
-.modal-close-button::after {
-    content: "";
-    height: 2px;
-    width: 17px;
-    transform: rotate(-45deg);
-    background-color: black;
-    position: absolute;
-    margin: auto;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-}
-
 .field-group {
-    border: none 0;
+    border: none;
     margin: 0;
     margin-bottom: 40px;
     padding: 0;
@@ -1763,7 +1737,8 @@ body {
 .search-people-field {
     width: 133px;
     height: 50px;
-    padding-left: 0;
+    padding-left: 42px;
+    padding-right: 42px;
     border-radius: 4px;
     box-sizing: border-box;
     text-align: center;
@@ -1771,6 +1746,7 @@ body {
     line-height: 40px;
     color: black;
     font-weight: 700;
+    -moz-appearance: textfield;
 }
 
 .search-people-field::-webkit-outer-spin-button,
@@ -1850,10 +1826,20 @@ body {
 }
 
 .btn-minus {
-    right: 96px;
+    left: 14px;
+    background-image: url(../img/modal/minus-button.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn-minus-adults {
+    left: 73px;
 }
 
 .btn-plus {
+    background-image: url(../img/modal/plus-button.svg);
+    background-repeat: no-repeat;
+    background-position: center;
     right: 14px;
 }
 
@@ -1871,47 +1857,6 @@ body {
 .btn-minus:active,
 .btn-plus:active {
     opacity: 0.2;
-}
-
-
-.btn-minus::before {
-    content: "";
-    background-color: black;
-    height: 1px;
-    width: 13px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-
-.btn-plus::before {
-    content: "";
-    background-color: black;
-    height: 1px;
-    width: 13px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-
-.btn-plus::after {
-    content: "";
-    background-color: black;
-    height: 1px;
-    width: 13px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    transform: rotate(90deg);
 }
 
 .info {
@@ -1961,6 +1906,3 @@ body {
     background-color: #333333;
 }
 
-.modal-container-close {
-    display: none;
-}
