@@ -275,9 +275,13 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 160px;
+    width: 160px;
     min-height: 37px;
     margin: auto 0;
+    margin-top: 14px;
+}
+
+.nav-user:last-child {
     margin-bottom: 14px;
 }
 
@@ -405,6 +409,8 @@ img {
 
 .advantages-photo {
     width: 800px;
+    min-height: 100%;
+    object-fit: cover;
 }
 
 .advantages-item-wrapper {
